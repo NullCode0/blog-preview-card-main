@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--Cream);
+}
+main {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: auto;
+    margin-top: 150px;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+.card-item .sec-one {
+    display: flex;
+    width: 50%;
+}
+.card-item .sec-one img {
+    width: 100%;
+    height: 600px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sec-tow {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.sec-tow .title h4 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--Dark_cyan);
+}
+.sec-tow .secound-title {
+    width: 230px;
+    margin-top: -10px;
+    margin-bottom: 35px;
+}
+.sec-tow .secound-title h1 {
+    font-size: 35px;
+    margin: 0;
+    font-family: "Fraunces", serif;
+}
+.sec-tow .para {
+    margin-top: -25px;
+    width: 200px;
+}
+.sec-tow .para p {
+    color: var(--Dark_grayish_blue);
+    font-weight: 500;
+    font-size: 17px;
+}
+.sec-tow .salary_card {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-bottom: 40px;
+}
+.sec-tow .salary_card .offer p {
+    color: var(--Dark_grayish_blue);
+    text-decoration: line-through;
+    margin-left: 35px;
+}
+.sec-tow .salary_card .salary p {
+    color: var(--Dark_cyan);
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.sec-tow .btn {
+    width: 80%;
+}
+.sec-tow .payment {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec-tow .payment button .img img{
+    margin-left: -30px;
+    width: min-content;
+}
+.sec-tow .title,
+.sec-tow .secound-title,
+.sec-tow .para,
+.sec-tow .salary_card {
+    margin-left: 10px;
+}
+.sec-tow .payment button {
+    width: 100%;
+    font-size: 20px;
+    padding: 15px;
+    color: var(--White);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--Dark_cyan);
+}
+@media (min-width:250px) and (max-width:768px) {
+    main {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .card-item .sec-one {
+        width: 100%;
+    }
+    .card-item .sec-one img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+    .card-item .sec-tow {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-item .sec-tow .salary_card {
+        width: 80%;
+        display: flex;
+        justify-content: left;
+    }
+    .card-item .sec-tow .salary_card .offer p {
+        margin-left: 15px;
+    }
+    .card-item .sec-tow .payment .btn {
+        width: 80%;
+    }
+    .card-item .sec-tow .payment {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width:769px) and (max-width:1200px){
+    main {
+        width: 70%;
+    }
+}
